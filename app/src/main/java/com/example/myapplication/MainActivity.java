@@ -19,20 +19,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void show(View view) {
-        EditText name = (EditText) findViewById(R.id.ed_name);
-        EditText h =(EditText)  findViewById(R.id.ed_high);
-        EditText w =(EditText)  findViewById(R.id.ed_weight);
-        ImageView view1 =(ImageView) findViewById(R.id.iv_pic);
-
-
-        double w_value = Double.parseDouble(w.getText().toString());
-        double h_value = Double.parseDouble(h.getText().toString());
-        double bmi = w_value / (h_value/100.0 *h_value/100.0);
-
-        DecimalFormat df = new DecimalFormat("#.#");
-
-        TextView b  =findViewById(R.id.tv_showbmi);
+//    public void show(View view) {
+//        EditText name = (EditText) findViewById(R.id.ed_name);
+//        EditText h =(EditText)  findViewById(R.id.ed_high);
+//        EditText w =(EditText)  findViewById(R.id.ed_weight);
+//        ImageView view1 =(ImageView) findViewById(R.id.iv_pic);
+//
+//
+//        double w_value = Double.parseDouble(w.getText().toString());
+//        double h_value = Double.parseDouble(h.getText().toString());
+//        double bmi = w_value / (h_value/100.0 *h_value/100.0);
+//
+//        DecimalFormat df = new DecimalFormat("#.#");
+//
+//        TextView b  =findViewById(R.id.tv_showbmi);
 
         String msg;
         if(bmi<18.5){
